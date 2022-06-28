@@ -8,9 +8,9 @@ import os
 # init pyttsx
 engine = pyttsx3.init("sapi5")
 voices = engine.getProperty("voices")
-engine.setProperty("rate",178)
+engine.setProperty("rate",158)
 
-engine.setProperty('voice', voices[0].id)  # 1 for female and 0 for male voice
+engine.setProperty('voice', voices[1].id)  # 1 for female and 0 for male voice
 
 
 def speak(audio):
@@ -36,7 +36,7 @@ def take_command():
 
 if __name__ == '__main__':
     speak(" Namaste Tarun Sir")
-    speak("Loki assistance activated ")
+    speak("somia assistance activated ")
     speak("How can i help you  sir")
     while True:
         query = take_command().lower()
@@ -48,7 +48,35 @@ if __name__ == '__main__':
             speak(results)
             print(results)
         elif 'who are you' in query:
-            speak("I am Loki developed by Tarun Kumar")
+            speak("I am  world's most beautiful girl somia which are  programmed by Tarun Kumar ")
+        elif 'who is tarun' in query:
+            speak("He is an engineering student from pantnagar and he is  my friend ")
+        elif 'give me your contact number' in query:
+            speak("9389767451")
+            print("9389767451")
+        elif 'when is your birthday' in query:
+            speak("seven december ")
+            print("07 december")
+        elif 'what is your email id' in query:
+            speak("07somiav@gmail.com")
+            print("07saumyav@gmail.com")
+        elif 'do you have any facebook account' in query:
+            speak("no i dont have any facebook account ")
+        elif 'do you have any instagram account' in query:
+            speak("yes ")
+        elif 'tell me your hobbies' in query:
+            speak(" my hobbies are dance, enjoy to some new places and what is your hobbies ")
+        elif 'tell me the name of your school' in query:
+            speak("m square public school and pnf public school pithoragarh , tell me your schools name ")
+        elif 'open your childhood photo' in query:
+            speak("opening my childhood photo")
+            webbrowser.open("E:\ECE ISRO ESE\IMG-20211221-WA0005.jpg")
+        elif 'open your photo' in query:
+            speak("opening my photo")
+            webbrowser.open("E:\ECE ISRO ESE\Screenshot_2022-05-25-21-14-17-341_com.whatsapp.jpg")       
+        elif 'give me your insta id' in query:
+            speak("opening insta id")
+            webbrowser.open("https://www.instagram.com/7saumya_verma/")
         elif 'open youtube' in query:
             speak("opening youtube")
             webbrowser.open("https://www.youtube.com/")
@@ -67,32 +95,29 @@ if __name__ == '__main__':
         elif 'open github' in query:
             speak("opening github")
             webbrowser.open("github.com")
-        elif 'open stackoverflow' in query:
-            speak("opening stackoverflow")
-            webbrowser.open("stackoverflow.com")
         elif 'open spotify' in query:
             speak("opening spotify")
             webbrowser.open("spotify.com")
         elif 'open whatsapp' in query:
             speak("opening whatsapp")
             webbrowser.open("C://Users\DELL\Desktop\WhatsApp.lnk")
-        elif 'play music' in query:
-            speak("opening music")
-            webbrowser.open("spotify.com")
-        elif 'loki tell me time' in query:
+        elif 'play phir miloge na song' in query:
+            speak("opening song")
+            webbrowser.open("https://youtu.be/n0VNjUNjB-g")
+        elif 'open college website' in query:
+            speak("opening college website")
+            webbrowser.open("http://www.gbpuat-tech.ac.in/")
+        elif 'open old registered website' in query:
+            speak("opening regi ")
+            webbrowser.open("http://gbpuat-regi.com/newregi/default.html")
+        elif 'somia tell me time' in query:
             time = datetime.datetime.now().strftime('%I:%M %p')
             speak('Current time is ' + time)
             print(time)
         elif 'open kgf teaser' in query:
             speak("opening local disk D")
             webbrowser.open("C://Users\DELL\Videos\kgf teaser.mp4")
-        elif 'local disk c' in query:
-            speak("opening local disk C")
-            webbrowser.open("C://")
-        elif 'local disk e' in query:
-            speak("opening local disk E")
-            webbrowser.open("E://")
-        elif 'shutdown loki' in query:
+        elif 'shutdown somia' in query:
             speak("okay thank you  sir")
 
             exit(0)
